@@ -2,7 +2,9 @@
 
 @section('content')
     <div class="container">
-        <h1>{{$pasta->title}}</h1>
+        <h1>{{$pasta->title}}
+            <a class="btn btn-warning " href="{{route('pastas.edit', $pasta)}}" title="edit"><i class="fa-solid fa-pencil"></i></a>
+        </h1>
         <div>Tipo: <strong>{{$pasta->type}}</strong></div>
         <div>Peso: <strong>{{$pasta->weight}}</strong></div>
         <div>Tempo di cottura: <strong>{{$pasta->cooking_time}}</strong></div>

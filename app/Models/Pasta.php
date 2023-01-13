@@ -10,6 +10,8 @@ class Pasta extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['title','type','cooking_time','weight','description','slug'];
+
     public static function generateSlug($string){
         $slug = Str::slug($string, '-');
         /*

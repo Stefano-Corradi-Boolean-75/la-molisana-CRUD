@@ -21,9 +21,9 @@ class PastasTableSeeder extends Seeder
             $new_pasta = new Pasta();
             $new_pasta->title = $pasta_item['titolo'];
             $new_pasta->slug = Pasta::generateSlug($new_pasta->title);
-            $new_pasta->image = $pasta_item['src'];
-            $new_pasta->image_h = $pasta_item['src-h'];
-            $new_pasta->image_p = $pasta_item['src-p'];
+            //$new_pasta->image = $pasta_item['src'];
+            //$new_pasta->image_h = $pasta_item['src-h'];
+            //$new_pasta->image_p = $pasta_item['src-p'];
             $new_pasta->type = $pasta_item['tipo'];
             $new_pasta->cooking_time = $pasta_item['cottura'];
             $new_pasta->weight = $pasta_item['peso'];

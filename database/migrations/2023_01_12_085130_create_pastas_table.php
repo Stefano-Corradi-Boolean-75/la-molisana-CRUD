@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title', 100);
             $table->string('slug', 110)->unique();
-            $table->string('image');
+            $table->string('image')->default('http://www.asdalcione.it/wp-content/uploads/2016/08/jk-placeholder-image-1.jpg');
             $table->string('image_h')->nullable();
             $table->string('image_p')->nullable();
             $table->string('type', 20);
